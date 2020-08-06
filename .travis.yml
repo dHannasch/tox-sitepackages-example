@@ -41,6 +41,7 @@ before_install:
   - uname -a
   - lsb_release -a || true
 install:
+  - python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.5/index.html
   - python -mpip install --progress-bar=off tox -rci/requirements.txt
   - virtualenv --version
   - easy_install --version
