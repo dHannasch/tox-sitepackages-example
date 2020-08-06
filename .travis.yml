@@ -34,7 +34,7 @@ install:
   - pip --version
   - tox --version
 script:
-  - tox --recreate -vv
+  - tox --recreate -vv --sitepackages
 after_failure:
   - cat .tox/log/*
   - cat .tox/*/log/*
