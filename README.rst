@@ -7,16 +7,11 @@ Overview
 .. list-table::
     :stub-columns: 1
 
-    * - docs
-      - |docs|
     * - tests
       - | |travis| |appveyor|
         |
     * - package
       - | |commits-since|
-.. |docs| image:: https://readthedocs.org/projects/tox-sitepackages-example/badge/?style=flat
-    :target: https://readthedocs.org/projects/tox-sitepackages-example
-    :alt: Documentation Status
 
 .. |travis| image:: https://api.travis-ci.org/dHannasch/tox-sitepackages-example.svg?branch=master
     :alt: Travis-CI Build Status
@@ -54,7 +49,6 @@ Documentation
 =============
 
 
-https://tox-sitepackages-example.readthedocs.io/
 
 
 Development
