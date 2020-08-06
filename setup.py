@@ -22,6 +22,7 @@ def read(*names, **kwargs):
     ) as fh:
         return fh.read()
 
+
 setup(
     name='tox-sitepackages-example',
     use_scm_version={
