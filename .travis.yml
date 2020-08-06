@@ -28,7 +28,8 @@ before_install:
   - uname -a
   - lsb_release -a || true
 install:
-  - python -mpip install --progress-bar=off tox -rci/requirements.txt
+  - python -mpip install --progress-bar=off 'tox==3.18.1' -rci/requirements.txt
+  - python -m pip install 'pip==20.2'
   - python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.5/index.html
   - virtualenv --version
   - easy_install --version
