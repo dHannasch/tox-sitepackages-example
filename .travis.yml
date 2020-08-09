@@ -37,6 +37,7 @@ install:
   - easy_install --version
   - pip --version
   - tox --version
+  - pip list
 script:
   - tox --recreate -vv --sitepackages
 after_failure:
