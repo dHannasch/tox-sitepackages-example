@@ -39,6 +39,9 @@ install:
   - tox --version
   - pip list
 script:
+  # We can see the crash simply by running tox, but we invoke virtualenv manually to add -vvv --with-traceback.
+  - python -m virtualenv -vvv --with-traceback --system-site-packages --no-download py38
+  - py38/bin/python -m pip install .
   - tox --recreate -vv --sitepackages
 after_failure:
   - cat .tox/log/*
