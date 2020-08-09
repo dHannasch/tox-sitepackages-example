@@ -32,6 +32,8 @@ install:
   - python -m pip install 'pip==20.2'
   - python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.5/index.html
   - virtualenv --version
+  - python -m pip install --upgrade virtualenv
+  - virtualenv --version
   - easy_install --version
   - pip --version
   - tox --version
